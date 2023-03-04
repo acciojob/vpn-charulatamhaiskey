@@ -36,6 +36,8 @@ public class ConnectionServiceImpl implements ConnectionService {
             return user;
         }
         else{
+
+
             //3. Else, the user should be subscribed under a serviceProvider having option
             // to connect to the given country.
             if(user.getServiceProviderList()==null){
@@ -44,6 +46,8 @@ public class ConnectionServiceImpl implements ConnectionService {
                 // (As user does not have a serviceProvider or serviceProvider does not have given country,
                 // throw "Unable to connect" exception.
             }
+
+
     //Else, establish the connection where the maskedIp is "updatedCountryCode.serviceProviderId.userId"
             // and return the updated user.
             // If multiple service providers allow you to connect to the country,

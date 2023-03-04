@@ -84,6 +84,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User subscribe(Integer userId, Integer serviceProviderId) {
+
         //find User by userId
         User user = userRepository3.findById(userId).get();
 
